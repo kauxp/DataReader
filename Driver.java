@@ -44,7 +44,6 @@ public class Driver {
         }
     }
 
-    // Show books by author
     public static void showBooksByAuthor(List<Book> books, String auth) {
         for (Book b : books) {
             if (b.getWriter().equalsIgnoreCase(auth)) {
@@ -53,7 +52,6 @@ public class Driver {
         }
     }
 
-    // Show books by rating
     public static void showBooksByRating(List<Book> books, double rate) {
         for (Book b : books) {
             if (b.getRating() == rate) {
@@ -62,7 +60,6 @@ public class Driver {
         }
     }
 
-    // Show book names and prices by author
     public static void showPriceByAuthor(List<Book> books, String auth) {
         for (Book b : books) {
             if (b.getWriter().equalsIgnoreCase(auth)) {

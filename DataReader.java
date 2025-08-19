@@ -7,7 +7,7 @@ public class DataReader {
         List<Book> books = new ArrayList<>();
 
         try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
-            String line = br.readLine(); // skip header
+            String line = br.readLine();
 
             while ((line = br.readLine()) != null) {
                 String[] parts = line.split(",(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)", -1);

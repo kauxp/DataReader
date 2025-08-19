@@ -7,7 +7,6 @@ public class Book {
     private int pubYear;
     private String type;
 
-    // Constructor
     public Book(String name, String writer, double rating, int reviewCount, int cost, int pubYear, String type) {
         this.name = name;
         this.writer = writer;
@@ -18,7 +17,6 @@ public class Book {
         this.type = type;
     }
 
-    // Getters
     public String getName() { return name; }
     public String getWriter() { return writer; }
     public double getRating() { return rating; }
@@ -27,11 +25,7 @@ public class Book {
     public int getPubYear() { return pubYear; }
     public String getType() { return type; }
 
-    // Show book info
     public void showInfo() {
-        System.out.println("Name: " + name + ", Author: " + writer +
-                ", Rating: " + rating + ", Reviews: " + reviewCount +
-                ", Price: $" + cost + ", Year: " + pubYear +
-                ", Genre: " + type);
+        System.out.println("Name: " + name + ", Author: " + writer +", Rating: " + rating + ", Reviews: " + reviewCount +", Price: $" + cost + ", Year: " + pubYear +", Genre: " + type);
     }
 }
